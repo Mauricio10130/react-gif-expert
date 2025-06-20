@@ -1,4 +1,4 @@
-import React from 'react'
+import PropTypes from "prop-types"
 
 export const GiftItem = ({ title, url, id }) => {
   return (
@@ -7,6 +7,11 @@ export const GiftItem = ({ title, url, id }) => {
         <p>{ title }</p>
     </div>
   )
+}
+
+GiftItem.PropTypes = {
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
 }
 
 export default GiftItem
